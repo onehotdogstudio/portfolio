@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'breviary';
+  src: url(./fonts/breviary.otf) format("opentype");
+}
+
+body {
+    font-family: 'breviary';
+    font-weight: normal;
+    text-align: center;
+    color: #acacac;
+    font-size: 32px;
+    padding: 64px 24px;
+    margin: 0;
+    background-color: #232323;
+}

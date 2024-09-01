@@ -1,6 +1,11 @@
 :root {
   --white: white;
   --black: black;
+
+}
+@font-face {
+  font-family: breviary;
+  src: url(../fonts/breviary.otf)
 }
 
 .hero-stack {
