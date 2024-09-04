@@ -40,13 +40,13 @@ body {
   padding-inline: 80px;
   text-align: center;
   align-items: center;
-  max-width: 540px;
+  max-width: 400px;
 }
 
 h1 {
   font-family: 'breviary';
   font-weight: normal;
-  font-size: 40px;
+  font-size: 48px;
   color: #acacac;
 }
 
