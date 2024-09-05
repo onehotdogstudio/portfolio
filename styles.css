@@ -47,12 +47,12 @@ h2 {
 
 .flex-container {
   display: flex;
-  height: 320px;
+  height: auto;
+  min-height: 320px;
   width: auto;
   justify-content: center;
   padding: 0px;
-  margin: 24px 40px;
-  align-items: center;
+  margin: 2% 4%;
 }
 
 .crop {
