@@ -14,13 +14,19 @@ body {
   background-color: #232323;
   text-align: center;
   align-items: center;
+  justify-content: center;
+}
+
+main {
+  padding-top: 120px;
+  padding-bottom: 24px;
 }
 
 h1 {
   font-family: 'breviary';
   font-weight: normal;
   font-size: 48px;
-  color: #acacac;
+  color: #dddddd;
 }
 
 h2 {
@@ -28,21 +34,68 @@ h2 {
   font-weight: normal;
   font-size: 20px;
   line-height: 1.6;
-  color: #acacac;
+  color: #dddddd;
+}
+
+h3 {
+  font-family: 'inter';
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: #6E6E6E;
+  margin: 0px;
+  padding: 0px;
+}
+
+h4 {
+font-family: 'inter';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #dddddd;
+  margin: 0px;
+  padding: 0px;
 }
 
 .text-wrapper {
   text-align: center;
   align-items: center;
-  max-width: 400px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto
 }
 
+div {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .container {
-  padding: 0px;
-  margin: 24px 40px;
+  padding: 16px;
+  margin: 0px 40px;
   align-items: center;
+  gap: 80px;
+}
+
+.container-small-spacing {
+  gap: 8px;
+  margin: 0px;
+  max-width: 400px;
+  
+}
+
+.container-medium-spacing {
+  gap: 16px; /* Medium spacing (default) */
+}
+
+.container-large-spacing {
+  gap: 32px; /* Larger spacing */
+}
+
+/* Optional: Use padding or margin for additional control */
+.container-padding {
+  padding: 16px;
 }
 
 .flex-container {
