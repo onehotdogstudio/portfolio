@@ -58,6 +58,14 @@ font-family: 'inter';
   padding: 0px;
 }
 
+.body-medium { 
+  font-family: 'inter';
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #6E6E6E;
+}
+
 .text-wrapper {
   text-align: center;
   align-items: center;
@@ -148,7 +156,134 @@ div {
 
 .column p {
   margin-top: 8px;
-  font-size: 16px;
-  color: #333; /* Adjust text color */
 }
 
+.divider-line {
+  stroke: #6E6E6E;
+  stroke-width: 2;
+}
+
+.img-example {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover: scale and add a soft opacity */
+.hover-line-img {
+  /* Start with a thick, transparent border */
+  border: 4px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+/* On hover, the border becomes visible */
+.image-link:hover .hover-line-img {
+  border-color: #ffffff; /* or whatever color you want */
+}
+
+/* Focus: for keyboard users, add an outline */
+.image-link:focus .img-example {
+  outline: 2px solid #00f;
+  outline-offset: 4px;
+}
+
+/* Active: scale image down a bit when clicked */
+.image-link:active .img-example {
+  transform: scale(0.95);
+}
+
+
+/* Container for the entire block */
+.pmf-section {
+  position: relative; /* so child absolute elements stay within */
+  max-width: 1200px;
+  min-height: 800px; /* adjust as needed */
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Circle background placeholder */
+.pmf-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #3a3a3a;
+  z-index: 1; /* behind the cards */
+}
+
+/* Card styling */
+.card {
+  position: absolute;
+  width: 220px; /* adjust as needed */
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  z-index: 2; /* above the circle */
+  text-align: center;
+}
+.card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Simple shape placeholder inside the card */
+.shape-placeholder {
+  width: 100%;
+  height: 100px; /* just a placeholder */
+  background-color: #555;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+/* Position each card around the circle */
+.pmf-narrative {
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.design-sprint {
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+.campfire-dashboard {
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.meet-pmf {
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+
+/* Arrow placeholders: simple diamonds (rotated squares) */
+.arrow {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #7f7f7f;
+  transform: rotate(45deg);
+  z-index: 3;
+}
+
+/* Sample arrow positions (adjust as needed) */
+.arrow-1 {
+  top: 22%;
+  left: 55%;
+}
+.arrow-2 {
+  top: 60%;
+  right: 15%;
+}
+.arrow-3 {
+  bottom: 20%;
+  left: 45%;
+}
