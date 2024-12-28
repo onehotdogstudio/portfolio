@@ -74,6 +74,64 @@ font-family: 'inter';
   margin-right: auto
 }
 
+/* General Button Styling */
+.custom-button {
+  background-color: #676767; /* Blue */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 1000px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+  /* Normal State */
+  .custom-button {
+    background-color: #676767 ;
+  }
+  /* Hover State */
+  .custom-button:hover {
+    background-color: #757575; /* Darker blue */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  /* Active State */
+  .custom-button:active {
+    background-color: #003f7f; /* Even darker blue */
+    transform: scale(0.98); /* Slightly smaller for click effect */
+  }
+  /* Focus State */
+  .custom-button:focus {
+    box-shadow: 0px 0px 5px 2px rgba(0, 123, 255, 0.5);
+  }
+  /* Disabled State */
+  .custom-button:disabled {
+    background-color: #c0c0c0; /* Gray */
+    color: #6c757d; /* Gray text */
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+
+  /* General Link Button Styling */
+.link-button {
+  display: inline-block; /* Makes it behave like a button */
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: white; /* Button text color */
+  background-color: #007bff; /* Button background color */
+  text-decoration: none; /* Removes underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+}
+
+/* Hover State */
+.link-button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
 div {
   padding-top: 0px;
   padding-bottom: 0px;
